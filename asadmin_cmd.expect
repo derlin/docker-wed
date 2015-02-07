@@ -1,0 +1,13 @@
+#!/usr/bin/expect
+
+set password [lindex $argv 0]
+set cmd [lindex $argv 1]
+
+
+spawn asadmin ${cmd}
+expect admin
+send "admin\n"
+expect "password"
+send "${password}\n"
+expect eof
+exit
