@@ -42,4 +42,4 @@ ENV DERBY_HOME /opt/oracle/glassfish4/javadb/bin/
 
 #ADD WeddingSiteApp.war /opt/oracle/glassfish4/glassfish/domains/domain1/autodeploy/
 
-RUN ["/run.sh"]
+#RUN ["/run.sh"]
